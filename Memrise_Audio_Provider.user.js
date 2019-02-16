@@ -250,7 +250,7 @@ $(document).ready(function () {
                     }, 300);
                 } else {
                     log("generating google tts link for word: " + word);
-                    var url = "https://translate.google.com/translate_tts?ie=UTF-8&tl=" + languageCode + "&client=tw-ob&q=" + encodeURIComponent(word) + "&tk=" + Math.floor(Math.random() * 1000000); //helps stop google from complaining about too many requests;
+                    var url = "https://translate.google.as/translate_tts?ie=UTF-8&tl=" + languageCode + "&client=tw-ob&q=" + encodeURIComponent(word) + "&tk=" + Math.floor(Math.random() * 1000000); //helps stop google from complaining about too many requests;
                     var audioElement = makeAudioElement(source, word, url, function (e) {
                         if(referrerState === "origin") {
                             console.log("referrer header was set prematurely");
